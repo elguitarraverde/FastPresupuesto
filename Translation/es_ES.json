@@ -1,0 +1,10 @@
+{
+  "fastpresupuesto-contact-name-required": "Debes indicar al menos el nombre del contacto para guardar el presupuesto.",
+  "fastpresupuesto-contact-name": "Nombre contacto",
+  "fastpresupuesto-contact-email-invalid": "El email del contacto no es válido.",
+  "fastpresupuesto-contact-phone": "Teléfono contacto",
+  "fastpresupuesto-contact-email": "Email contacto",
+  "fastpresupuesto-new": "Nuevo presupuesto rápido",
+  "fastpresupuesto-missing-technical-customer": "No existe el cliente técnico FASTPRES. Desactiva y activa el plugin FastPresupuesto para crearlo.",
+  "fastpresupuesto-official-status-blocked": "No puedes cerrar un documento con el cliente técnico FASTPRES. Asigna antes un cliente real."
+}

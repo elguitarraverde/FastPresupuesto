@@ -1,0 +1,10 @@
+/vendor/
+/composer.lock
+/.php-cs-fixer.cache
+/phpstan-baseline.neon
+/build/
+/coverage/
+/releases/
+/Releases/
+/*.zip
+

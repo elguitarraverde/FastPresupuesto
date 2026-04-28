@@ -1,0 +1,20 @@
+includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+    level: 5
+    bootstrapFiles:
+        - ../../vendor/autoload.php
+    paths:
+        - .
+    excludePaths:
+        - vendor
+        - releases
+        - Releases
+        - *.zip
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+        - '#Call to an undefined method FacturaScripts\\Plugins\\FastPresupuesto\\Extension\\Controller\\ListPresupuestoCliente::addButton\(\)#'
+        - '#Call to protected method validateFormToken\(\) of class FacturaScripts\\Core\\Base\\Controller#'
+        - '#Access to an undefined property FacturaScripts\\Core\\Model\\Base\\SalesDocument::\$contacto_(telefono|email)#'
+        - '#Access to an undefined property FacturaScripts\\Dinamic\\Model\\PresupuestoCliente::\$contacto_(telefono|email)#'

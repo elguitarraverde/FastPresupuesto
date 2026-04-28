@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <modals>
+        <group name="create-fast-presupuesto" title="fastpresupuesto-new" icon="fa-solid fa-bolt">
+            <column name="fastpresupuesto-contact-name" numcolumns="6">
+                <widget type="text" fieldname="fastpresupuesto_nombre" required="true" maxlength="100"/>
+            </column>
+            <column name="fastpresupuesto-contact-phone" numcolumns="6">
+                <widget type="text" fieldname="fastpresupuesto_telefono" maxlength="20"/>
+            </column>
+            <column name="fastpresupuesto-contact-email" numcolumns="12">
+                <widget type="email" fieldname="fastpresupuesto_email" maxlength="150"/>
+            </column>
+        </group>
+    </modals>
+</view>
