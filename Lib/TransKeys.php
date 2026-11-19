@@ -6,12 +6,12 @@ namespace FacturaScripts\Plugins\FastPresupuesto\Lib;
 
 final class TransKeys
 {
-    public const NEW = 'fastpresupuesto-new';
-    public const PHONE = 'fastpresupuesto-contact-phone';
-    public const EMAIL = 'fastpresupuesto-contact-email';
-    public const NAME_REQUIRED = 'fastpresupuesto-contact-name-required';
-    public const MISSING_CUSTOMER = 'fastpresupuesto-missing-technical-customer';
-    public const STATUS_BLOCKED = 'fastpresupuesto-official-status-blocked';
+    public const string NEW = 'fastpresupuesto-new';
+    public const string PHONE = 'fastpresupuesto-contact-phone';
+    public const string EMAIL = 'fastpresupuesto-contact-email';
+    public const string NAME_REQUIRED = 'fastpresupuesto-contact-name-required';
+    public const string MISSING_CUSTOMER = 'fastpresupuesto-missing-technical-customer';
+    public const string STATUS_BLOCKED = 'fastpresupuesto-official-status-blocked';
 
     private function __construct()
     {

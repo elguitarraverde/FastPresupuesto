@@ -9,12 +9,15 @@ use FacturaScripts\Core\Tools;
 use FacturaScripts\Plugins\FastPresupuesto\Init;
 use FacturaScripts\Plugins\FastPresupuesto\Lib\TransKeys;
 
+/**
+ * @mixin \FacturaScripts\Dinamic\Model\PresupuestoCliente
+ */
+#[\AllowDynamicProperties]
 class PresupuestoCliente
 {
     public function testBefore(): Closure
     {
         return function (): bool {
-            /** @var \FacturaScripts\Dinamic\Model\PresupuestoCliente $this */
             if ($this->codcliente !== Init::TECHNICAL_CUSTOMER_CODE) {
                 return true;
             }

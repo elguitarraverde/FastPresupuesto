@@ -11,6 +11,10 @@ use FacturaScripts\Dinamic\Model\PresupuestoCliente;
 use FacturaScripts\Plugins\FastPresupuesto\Init;
 use FacturaScripts\Plugins\FastPresupuesto\Lib\TransKeys;
 
+/**
+ * @mixin \FacturaScripts\Dinamic\Controller\ListPresupuestoCliente
+ */
+#[\AllowDynamicProperties]
 class ListPresupuestoCliente
 {
     public function createViews(): Closure
@@ -32,7 +36,6 @@ class ListPresupuestoCliente
                 return true;
             }
 
-            /** @var \FacturaScripts\Core\Controller\ListPresupuestoCliente $this */
             if (false === $this->validateFormToken()) {
                 return false;
             }
